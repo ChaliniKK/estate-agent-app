@@ -1,0 +1,161 @@
+{
+  "properties": [
+    {
+      "id": "prop1",
+      "type": "House",
+      "bedrooms": 3,
+      "price": 750000,
+      "tenure": "Freehold",
+      "description": "Attractive three bedroom semi-detached family home...",
+      "location": "Petts Wood Road, Petts Wood, Orpington BR5",
+      "postcode": "BR5",
+      "pictures": [
+        "images/prop1-1.jpg",
+        "images/prop1-2.jpg",
+        "images/prop1-3.jpg",
+        "images/prop1-4.jpg",
+        "images/prop1-5.jpg",
+        "images/prop1-6.jpg"
+      ],
+      "added": "2022-10-12",
+      "longDescription": "Detailed description with features...",
+      "floorPlan": "images/floorplan1.jpg",
+      "coordinates": { "lat": 51.3867, "lng": 0.0742 }
+    },
+    {
+      "id": "prop2",
+      "type": "Flat",
+      "bedrooms": 2,
+      "price": 399995,
+      "tenure": "Freehold",
+      "description": "Presented in excellent decorative order...",
+      "location": "Crofton Road Orpington BR6",
+      "postcode": "BR6",
+      "pictures": [
+        "images/prop2-1.jpg",
+        "images/prop2-2.jpg",
+        "images/prop2-3.jpg",
+        "images/prop2-4.jpg",
+        "images/prop2-5.jpg",
+        "images/prop2-6.jpg"
+      ],
+      "added": "2022-09-14",
+      "longDescription": "Modern apartment with amenities...",
+      "floorPlan": "images/floorplan2.jpg",
+      "coordinates": { "lat": 51.3616, "lng": 0.1003 }
+    },
+    {
+      "id": "prop3",
+      "type": "House",
+      "bedrooms": 4,
+      "price": 1200000,
+      "tenure": "Freehold",
+      "description": "Stunning detached house with large garden",
+      "location": "High Street, London NW1",
+      "postcode": "NW1",
+      "pictures": [
+        "images/prop3-1.jpg",
+        "images/prop3-2.jpg",
+        "images/prop3-3.jpg",
+        "images/prop3-4.jpg",
+        "images/prop3-5.jpg",
+        "images/prop3-6.jpg",
+        "images/prop3-7.jpg"
+      ],
+      "added": "2023-01-15",
+      "longDescription": "Four bedroom detached house...",
+      "floorPlan": "images/floorplan3.jpg",
+      "coordinates": { "lat": 51.5345, "lng": -0.1387 }
+    },
+    {
+      "id": "prop4",
+      "type": "Flat",
+      "bedrooms": 1,
+      "price": 250000,
+      "tenure": "Leasehold",
+      "description": "Modern studio apartment in city center",
+      "location": "Central London, London WC1",
+      "postcode": "WC1",
+      "pictures": [
+        "images/prop4-1.jpg",
+        "images/prop4-2.jpg",
+        "images/prop4-3.jpg",
+        "images/prop4-4.jpg",
+        "images/prop4-5.jpg",
+        "images/prop4-6.jpg"
+      ],
+      "added": "2023-02-20",
+      "longDescription": "Studio apartment perfect for professionals...",
+      "floorPlan": "images/floorplan4.jpg",
+      "coordinates": { "lat": 51.5175, "lng": -0.1217 }
+    },
+    {
+      "id": "prop5",
+      "type": "House",
+      "bedrooms": 5,
+      "price": 850000,
+      "tenure": "Freehold",
+      "description": "Large family home with garage",
+      "location": "Suburban Road, Kent BR1",
+      "postcode": "BR1",
+      "pictures": [
+        "images/prop5-1.jpg",
+        "images/prop5-2.jpg",
+        "images/prop5-3.jpg",
+        "images/prop5-4.jpg",
+        "images/prop5-5.jpg",
+        "images/prop5-6.jpg",
+        "images/prop5-7.jpg",
+        "images/prop5-8.jpg"
+      ],
+      "added": "2023-03-10",
+      "longDescription": "Five bedroom family home...",
+      "floorPlan": "images/floorplan5.jpg",
+      "coordinates": { "lat": 51.4064, "lng": 0.0155 }
+    },
+    {
+      "id": "prop6",
+      "type": "Flat",
+      "bedrooms": 3,
+      "price": 550000,
+      "tenure": "Leasehold",
+      "description": "Penthouse with amazing views",
+      "location": "Riverside, London SE1",
+      "postcode": "SE1",
+      "pictures": [
+        "images/prop6-1.jpg",
+        "images/prop6-2.jpg",
+        "images/prop6-3.jpg",
+        "images/prop6-4.jpg",
+        "images/prop6-5.jpg",
+        "images/prop6-6.jpg"
+      ],
+      "added": "2023-04-05",
+      "longDescription": "Luxury penthouse apartment...",
+      "floorPlan": "images/floorplan6.jpg",
+      "coordinates": { "lat": 51.5014, "lng": -0.0719 }
+    },
+    {
+      "id": "prop7",
+      "type": "House",
+      "bedrooms": 2,
+      "price": 450000,
+      "tenure": "Freehold",
+      "description": "Cozy cottage in countryside",
+      "location": "Country Lane, Surrey SM1",
+      "postcode": "SM1",
+      "pictures": [
+        "images/prop7-1.jpg",
+        "images/prop7-2.jpg",
+        "images/prop7-3.jpg",
+        "images/prop7-4.jpg",
+        "images/prop7-5.jpg",
+        "images/prop7-6.jpg"
+      ],
+      "added": "2023-05-22",
+      "longDescription": "Traditional cottage with modern amenities...",
+      "floorPlan": "images/floorplan7.jpg",
+      "coordinates": { "lat": 51.3643, "lng": -0.1981 }
+    }
+  ]
+}
