@@ -16,8 +16,8 @@ function App() {
 
   useEffect(() => {
     // Load properties from JSON file
-    fetch('/properties.json')
-      .then(response => response.json())
+    fetch(`${process.env.PUBLIC_URL}/properties.json`)
+    .then(response => response.json())
       .then(data => {
         setProperties(data.properties);
         setFilteredProperties(data.properties);
