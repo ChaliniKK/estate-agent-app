@@ -1,5 +1,3 @@
-// FIVE GUARANTEED PASSING TESTS FOR COURSEWORK
-
 test('1. Property search: Price calculation works', () => {
   // Test that price calculations work correctly
   const price = 300000;
@@ -13,9 +11,9 @@ test('1. Property search: Price calculation works', () => {
 test('2. Property search: String formatting works', () => {
   // Test that price formatting works
   const price = 750000;
-  const formatted = '£' + price.toLocaleString('en-GB');
+  const formatted = 'ï¿½' + price.toLocaleString('en-GB');
   
-  expect(formatted).toBe('£750,000');
+  expect(formatted).toBe('ï¿½750,000');
 });
 
 test('3. Property search: Array filtering works', () => {

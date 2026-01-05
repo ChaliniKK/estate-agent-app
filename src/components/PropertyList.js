@@ -5,8 +5,7 @@ const PropertyList = ({ properties, onPropertyClick, onAddToFavourites, favourit
   const [{ isOver }, drop] = useDrop({
     accept: 'property',
     drop: (item) => {
-      // This handles when a favourite is dragged OUT of favourites back to the list
-      // For now, we don't need to do anything here
+      // when a favourite is dragged out of favourites back to the list ( have to fix :< ) 
       console.log('Item dropped back to property list:', item);
     },
     collect: monitor => ({

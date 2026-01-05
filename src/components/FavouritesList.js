@@ -6,7 +6,7 @@ const FavouritesList = ({
   onRemoveFavourite, 
   onClearFavourites, 
   onPropertyClick,
-  onAddToFavourites  // Now receiving the prop from App.js
+  onAddToFavourites  
 }) => {
   const [{ isOver }, drop] = useDrop({
     accept: 'property',
@@ -87,7 +87,7 @@ const FavouritesList = ({
       </div>
 
       <div className="favourites-instructions">
-        <p>💡 Drag properties here to add to favourites</p>
+        <p>Drag properties here to add to favourites</p>
       </div>
     </div>
   );

@@ -160,7 +160,7 @@ const PropertyPage = ({ property, onBack, onAddToFavourites, isFavourite }) => {
                 <h4>Send an Inquiry</h4>
                 <div className="form-group">
                   <label htmlFor="name">Your Name:</label>
-                  <input type="text" id="name" placeholder="John Smith" />
+                  <input type="text" id="name" placeholder="John Cena" />
                 </div>
                 <div className="form-group">
                   <label htmlFor="email">Your Email:</label>

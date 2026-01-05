@@ -110,7 +110,7 @@ function App() {
     <DndProvider backend={HTML5Backend}>
       <div className="App">
         <header className="app-header">
-          <h1>🏡 RightMove Property Search</h1>
+          <h1> RightMove Property Search</h1>
           <p>Find your dream home with our advanced search</p>
         </header>
 
@@ -138,7 +138,7 @@ function App() {
                     onRemoveFavourite={handleRemoveFavourite}
                     onClearFavourites={handleClearFavourites}
                     onPropertyClick={handlePropertyClick}
-                    onAddToFavourites={handleAddToFavourites}  // FIXED: Added this prop!
+                    onAddToFavourites={handleAddToFavourites} 
                   />
 
                   <div className="results-section">
@@ -167,7 +167,7 @@ function App() {
           <p>© 2023 Property Search Application | University of Westminster Coursework</p>
           <p>This is a client-side React application for educational purposes.</p>
           <div className="security-badge">
-            🔒 Client-Side Security: CSP & JSX Encoding Implemented
+            Client-Side Security: CSP & JSX Encoding Implemented
           </div>
         </footer>
       </div>

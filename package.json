@@ -2,6 +2,7 @@
   "name": "estate-agent-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://chalinikk.github.io/estate-agent-app/",
   "dependencies": {
     "react": "^18.2.0",
     "react-dnd": "^16.0.1",
@@ -13,16 +14,12 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test FivePassingTests.test.js --watchAll=false --verbose",
-    "test:all": "react-scripts test --watchAll=false",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test --watchAll=false",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
+
   "browserslist": {
     "production": [
       ">0.2%",
