@@ -1,89 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#1a237e" />
+    <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Estate Agent Property Search - University of Westminster Coursework"
+      content="Estate Agent Property Search Application"
     />
-    
-    <!-- Content Security Policy -->
+    <!-- CSP Header -->
     <meta http-equiv="Content-Security-Policy" 
-          content="default-src 'self';
-                   script-src 'self' 'unsafe-inline' 'unsafe-eval';
-                   style-src 'self' 'unsafe-inline';
-                   img-src 'self' data: https://maps.google.com https://*.googleapis.com https://*.ggpht.com;
-                   font-src 'self';
+          content="default-src 'self'; 
+                   script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google.com; 
+                   style-src 'self' 'unsafe-inline'; 
+                   img-src 'self' data: https: http:;
                    connect-src 'self';
-                   frame-src https://www.google.com;" />
-    
-    <!-- Security headers simulation -->
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="DENY">
-    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
-    
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    
-    <title>Estate Agent Property Search | 5COSC026W Coursework</title>
-    
-    <style>
-        /* Security: Prevent FOUC */
-        body {
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        body.loaded {
-            opacity: 1;
-        }
-        
-        /* Security: Hide content until React loads */
-        #root {
-            min-height: 100vh;
-        }
-        
-        /* Security: Prevent drag and drop attacks */
-        * {
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-        
-        input, textarea {
-            -webkit-user-select: text;
-            -moz-user-select: text;
-            -ms-user-select: text;
-            user-select: text;
-        }
-    </style>
-</head>
-<body onload="document.body.classList.add('loaded')">
-    <noscript>
-        <div style="padding: 2rem; text-align: center; background: #ffebee; color: #c62828;">
-            <h2>JavaScript is Required</h2>
-            <p>This application requires JavaScript to function properly.</p>
-            <p>Please enable JavaScript in your browser settings.</p>
-        </div>
-    </noscript>
+                   frame-src https://www.google.com;">
+    <title>Estate Agent Property Search</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    
-    <!-- Security: Escape HTML encoding for React -->
-    <script>
-        
-        // Validate URLs before use
-        const safeURLPattern = /^(https?|data):/i;
-        
-        // Security wrapper for dynamic content
-        const escapeHTML = (str) => {
-            const div = document.createElement('div');
-            div.textContent = str;
-            return div.innerHTML;
-        };
-    </script>
-</body>
+  </body>
 </html>

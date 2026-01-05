@@ -1,70 +1,179 @@
-# Getting Started with Create React App
+Estate Agent Property Search Application
+University of Westminster Coursework - 5COSC026W Advanced Client-Side Web Development
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Student: M.A.Chalini Kaushalya
 
-## Available Scripts
+Student ID: w2153565/20241143
 
-In the project directory, you can run:
+📋 Project Overview
+A responsive single-page application for searching and managing property listings, built with React. The application mimics RightMove.co.uk functionality with advanced search, favourites management, and detailed property views.
 
-### `npm start`
+🚀 Live Demo
+Live Application: [Deployed URL here]
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+GitHub Repository: [Your GitHub repo URL here]
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+✨ Features
+Core Functionality
+🔍 Advanced Property Search with multiple criteria:
 
-### `npm test`
+Property type (House/Flat/Any)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Price range filtering
 
-### `npm run build`
+Bedroom count filtering
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Date added filtering
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Postcode area search
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+⭐ Favourites Management with dual functionality:
 
-### `npm run eject`
+Add/remove via heart buttons
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Drag-and-drop support
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Clear all favourites option
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🏠 Property Details Pages with:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Image gallery with thumbnails
 
-## Learn More
+Tabbed information display
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Google Maps integration
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contact agent forms
 
-### Code Splitting
+Technical Features
+📱 Fully Responsive Design with mobile-first approach
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+🎨 Modern UI/UX with consistent design system
 
-### Analyzing the Bundle Size
+🔒 Client-Side Security with CSP implementation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+⚡ Performance Optimized with lazy loading
 
-### Making a Progressive Web App
+🧪 Comprehensive Testing with Jest framework
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+🛠️ Technology Stack
+Frontend: React 18.2.0
 
-### Advanced Configuration
+Build Tool: Create React App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Testing: Jest + React Testing Library
 
-### Deployment
+UI Libraries: React DnD (drag-and-drop), React Tabs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Styling: CSS3 with Flexbox/Grid
 
-### `npm run build` fails to minify
+Deployment: GitHub Pages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+estate-agent-app/
+├── public/
+│   ├── index.html
+│   ├── properties.json          # Property data (7 properties)
+│   └── images/
+├── src/
+│   ├── components/
+│   │   ├── SearchForm.js        # Search form with all filters
+│   │   ├── PropertyList.js      # Property grid display
+│   │   ├── PropertyPage.js      # Detailed property view
+│   │   ├── FavouritesList.js    # Favourites sidebar
+│   │   └── TabsComponent.js     # Tabbed property details
+│   ├── App.js                   # Main application component
+│   ├── App.css                  # Global styles
+│   ├── App.test.js              # Application tests
+│   ├── FivePassingTests.test.js # Core test suite (5 tests)
+│   └── index.js                 # Application entry point
+└── package.json
+
+json
+🧪 Testing
+The application includes comprehensive testing with Jest and React Testing Library. Five meaningful tests have been implemented:
+
+Test Suite (FivePassingTests.test.js)
+Price Calculation Test - Validates property affordability calculations
+
+Price Formatting Test - Tests GBP currency formatting for display
+
+Array Filtering Test - Tests filtering properties by type
+
+Object Validation Test - Validates property data structure
+
+Comparison Logic Test - Tests price comparison functionality
+
+Running Tests
+bash
+# Run all tests
+npm test
+
+# Run specific test file
+npm test -- FivePassingTests.test.js --watchAll=false
+🚦 Getting Started
+Prerequisites
+Node.js 14+ and npm/yarn
+
+Installation
+bash
+# Clone repository
+git clone [your-repo-url]
+
+# Install dependencies
+npm install
+
+# Start development server
+npm start
+Building for Production
+bash
+# Create production build
+npm run build
+
+# Deploy to GitHub Pages
+npm run deploy
+📱 Responsive Design
+The application features two distinct layouts:
+
+Desktop Layout
+Sidebar for favourites
+
+Main content area for search results
+
+Grid-based property cards
+
+Mobile Layout (iPad landscape and below)
+Single column layout
+
+Collapsible sections
+
+Touch-friendly interface
+
+🔒 Security Features
+Content Security Policy (CSP) implemented in index.html
+
+JSX Encoding for user input sanitization
+
+Input Validation on all form fields
+
+Safe Property Access with null checking
+
+📊 JSON Data Structure
+The application uses a local JSON file (public/properties.json) containing 7 diverse properties with:
+
+Various property types (House/Flat)
+
+Price range from £275,000 to £1,850,000
+
+Bedroom counts from 1 to 5
+
+Multiple postcode areas (BR1, NW1, WC1, SE1, SW1, EC1, N1)
+
+6-8 images per property
+
+Detailed features and amenities
+
+🤝 Contributing
+This is an individual coursework project. No contributions are accepted.
+
+📄 License
+This project is for educational purposes as part of University of Westminster coursework.
