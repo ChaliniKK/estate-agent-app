@@ -55,7 +55,7 @@ const PropertyPage = ({ property, onBack, onAddToFavourites, isFavourite }) => {
       <div className="property-gallery">
         <div className="main-image">
           <img
-            src={`${process.env.PUBLIC_URL}${property.pictures[selectedImage]}`}
+            src={property.pictures[selectedImage]}
             alt={`Property view ${selectedImage + 1}`}
             onClick={() => setIsModalOpen(true)}
           />
@@ -71,7 +71,7 @@ const PropertyPage = ({ property, onBack, onAddToFavourites, isFavourite }) => {
           {property.pictures.map((pic, index) => (
             <img
               key={index}
-              src={`${process.env.PUBLIC_URL}${pic}`}
+              src={pic}
               alt={`Thumbnail ${index + 1}`}
               className={selectedImage === index ? "active" : ""}
               onClick={() => setSelectedImage(index)}
@@ -197,7 +197,7 @@ const PropertyPage = ({ property, onBack, onAddToFavourites, isFavourite }) => {
               ×
             </button>
             <img
-              src={`${process.env.PUBLIC_URL}${property.pictures[selectedImage]}`}
+              src={property.pictures[selectedImage]}
               alt="Full size view"
               className="modal-image"
             />
@@ -205,7 +205,7 @@ const PropertyPage = ({ property, onBack, onAddToFavourites, isFavourite }) => {
               {property.pictures.map((pic, index) => (
                 <img
                   key={index}
-                  src={`${process.env.PUBLIC_URL}${pic}`}
+                  src={pic}
                   alt={`Thumbnail ${index + 1}`}
                   className={selectedImage === index ? "active" : ""}
                   onClick={() => setSelectedImage(index)}

@@ -5,7 +5,6 @@ const PropertyList = ({ properties, onPropertyClick, onAddToFavourites, favourit
   const [{ isOver }, drop] = useDrop({
     accept: 'property',
     drop: (item) => {
-      // when a favourite is dragged out of favourites back to the list ( have to fix :< ) 
       console.log('Item dropped back to property list:', item);
     },
     collect: monitor => ({
@@ -85,7 +84,7 @@ const PropertyCard = ({ property, onPropertyClick, onAddToFavourites, isFavourit
     >
       <div className="property-image">
         <img 
-          src={property.pictures[0] ? `${process.env.PUBLIC_URL}${property.pictures[0]}` : `${process.env.PUBLIC_URL}/placeholder.jpg`} 
+          src={property.pictures[0] || '/placeholder.jpg'} 
           alt={property.type} 
           onClick={() => onPropertyClick(property)}
           style={{ cursor: 'pointer' }}
