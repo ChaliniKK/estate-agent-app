@@ -32,10 +32,9 @@ A responsive single-page application for searching and managing property listing
 5. **Client-Side Security** - CSP headers and input validation
 
 ### **Testing**
-- 5 meaningful Jest tests in `FivePassingTests.test.js`
-- Tests cover: price calculation, formatting, filtering, validation, comparisons
+- 12 comprehensive tests covering search functionality, security features, and application logic
 - All tests pass successfully
 
 ## Running Tests
 ```bash
-npm test -- FivePassingTests.test.js --watchAll=false
+npm test -- --watchAll=false
