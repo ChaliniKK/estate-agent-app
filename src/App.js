@@ -110,7 +110,7 @@ function App() {
     <DndProvider backend={HTML5Backend}>
       <div className="App">
         <header className="app-header">
-          <h1> RightMove Property Search</h1>
+          <h1> 𖡼.𖤣𖥧 🏠︎ RightMove Property Search 𖠿 𖡼.𖤣𖥧</h1>
           <p>Find your dream home with our advanced search</p>
         </header>
 

@@ -6,7 +6,7 @@
 **Student ID: w2153565/20241143**
 
 ##Project Overview
-A responsive single-page application for searching and managing property listings, built with React. The application mimics RightMove.co.uk functionality with advanced search, favourites management, and detailed property views.
+A responsive application for searching and managing property listings, built with React. The application mimics RightMove.co.uk functionality with advanced search, favourites management, and detailed property views.
 
 
 ##Live Application

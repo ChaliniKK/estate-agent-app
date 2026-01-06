@@ -37,6 +37,6 @@ test('Search: Finds properties with 3+ bedrooms', () => {
   
   const result = filterProperties(properties, { minBedrooms: 3 });
   
-  expect(result.length).toBe(2); // 3 and 4 bedrooms
+  expect(result.length).toBe(2); 
   expect(result[0].bedrooms).toBeGreaterThanOrEqual(3);
 });

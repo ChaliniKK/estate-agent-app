@@ -4,7 +4,7 @@ test('Security: Prevents XSS attacks by encoding HTML', () => {
   const dangerousText = '<script>bad code</script>';
   const safeText = encodeJSX(dangerousText);
   
-  // Just check it doesn't contain the dangerous tags
+  //check if it doesn't contain the dangerous tags
   expect(safeText).not.toContain('<script>');
   expect(safeText).not.toContain('</script>');
   expect(typeof safeText).toBe('string');
